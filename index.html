@@ -1,59 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Loopstudios landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
 
-  Immersive experiences that deliver
-
-  The leader in interactive VR
-
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
-
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <header class="header">
+      <div class="header__upper-box">
+        <img src="images/logo.svg" alt="Logo" class="header__logo">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link">About</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Careers</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Events</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Products</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Support</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__bottom-box">
+        <h1 class="header__heading">Immersive experiences that deliver</h1>
+      </div>
+    </header>
+    <main class="main">
+      <div class="upper-box">
+        <img src="images/desktop/image-interactive.jpg" alt="main photo" class="upper-box__image">
+        <div class="upper-box__text">
+          <h2 class="upper-box__heading">The leader in interactive VR</h2>
+          <p class="upper-box__paragraph"> Founded in 2011, Loopstudios has been producing world-class virtual reality
+            projects for some of the best companies around the globe. Our award-winning
+            creations have transformed businesses through digital experiences that bind
+            to their brand.</p>
+        </div>
+      </div>
+      <div class="bottom-box">
+        <div class="first">
+          <h2 class="bottom-box__heading">Our creations</h2>
+          <button class="bottom-box__btn">See all</button>
+        </div>
+        <div class="second">
+          <div class="bottom-box__photo-container">
+            <img src="images/desktop/image-deep-earth.jpg" alt="Photo 1" class="bottom-box__photo">
+            <h3 class="bottom-box__heading-secondary">Deep earth</h3>
+          </div>
+          <div class="bottom-box__photo-container">
+            <img src="images/desktop/image-night-arcade.jpg" alt="Photo 2" class="bottom-box__photo">
+            <h3 class="bottom-box__heading-secondary">Night arcade</h3>
+          </div>
+          <div class="bottom-box__photo-container">
+            <img src="images/desktop/image-soccer-team.jpg" alt="Photo 3" class="bottom-box__photo">
+            <h3 class="bottom-box__heading-secondary">Soccer team VR</h3>
+          </div>
+          <div class="bottom-box__photo-container">
+            <img src="images/desktop/image-grid.jpg" alt="Photo 4" class="bottom-box__photo">
+            <h3 class="bottom-box__heading-secondary">The grid</h3>
+          </div>
+          <div class="bottom-box__photo-container">
+            <img src="images/desktop/image-from-above.jpg" alt="Photo 5" class="bottom-box__photo">
+            <h3 class="bottom-box__heading-secondary">From up above VR</h3>
+          </div>
+          <div class="bottom-box__photo-container">
+            <img src="images/desktop/image-pocket-borealis.jpg" alt="Photo 6" class="bottom-box__photo">
+            <h3 class="bottom-box__heading-secondary">Pocket borealis</h3>
+          </div>
+          <div class="bottom-box__photo-container">
+            <img src="images/desktop/image-curiosity.jpg" alt="Photo 7" class="bottom-box__photo">
+            <h3 class="bottom-box__heading-secondary">The curiosity</h3>
+          </div>
+          <div class="bottom-box__photo-container">
+            <img src="images/desktop/image-fisheye.jpg" alt="Photo 8" class="bottom-box__photo">
+            <h3 class="bottom-box__heading-secondary">Make it fisheye</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__upper">
+        <img src="images/logo.svg" alt="Logo" class="footer__logo">
+        <div class="footer__companies">
+          <svg class="footer__icon">
+            <use xlink:href="images/sprite.svg#icon-facebook"></use>
+          </svg>
+          <svg class="footer__icon">
+            <use xlink:href="images/sprite.svg#icon-twitter"></use>
+          </svg>
+          <svg class="footer__icon">
+            <use xlink:href="images/sprite.svg#icon-pinterest2"></use>
+          </svg>
+          <svg class="footer__icon">
+            <use xlink:href="images/sprite.svg#icon-instagram"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">About</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Careers</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Events</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Products</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Support</a>
+          </li>
+        </ul>
+        <p class="footer__paragraph"> © 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </footer>
   </div>
 </body>
+
 </html>
